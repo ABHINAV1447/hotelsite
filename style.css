@@ -356,7 +356,6 @@ header:not(.scrolled) .menu-btn span {
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
 }
 
 .hero-slider {
