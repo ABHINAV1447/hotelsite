@@ -183,6 +183,10 @@ button, input, select, textarea {
   transform: translateY(-2px);
 }
 
+.mobile-only {
+  display: none !important;
+}
+
 /* ==========================================================================
    HEADER & NAVIGATION
    ========================================================================== */
@@ -1962,20 +1966,41 @@ footer {
   }
 }
 
-@media (max-width: 768px) {
-  .section {
-    padding: 60px 0;
-  }
-  
+/* Tablet & Mobile Nav Breakpoint */
+@media (max-width: 900px) {
   .nav-links {
-    display: none; /* Mobile menu hidden by default */
+    display: none; /* Hide main links row */
   }
   
   .menu-btn {
-    display: flex;
+    display: flex; /* Show hamburger */
   }
   
-  /* Mobile Navigation Menu Open styling */
+  /* Animate Hamburger lines to an 'X' */
+  .menu-btn.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  
+  .menu-btn.active span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .menu-btn.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  
+  /* Hide header action buttons to avoid overlapping */
+  #my-bookings-btn,
+  #header-book-btn {
+    display: none !important;
+  }
+  
+  /* Show mobile-only menu items inside list */
+  .mobile-only {
+    display: block !important;
+  }
+  
+  /* Mobile Navigation Menu Open drawer */
   .nav-links.mobile-open {
     display: flex;
     flex-direction: column;
@@ -1988,11 +2013,46 @@ footer {
     padding: 100px 40px 40px;
     z-index: 999;
     animation: fadeIn 0.3s ease forwards;
+    gap: 20px;
   }
   
   .nav-links.mobile-open a {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: var(--text-main) !important;
+    display: inline-block;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 60px 0;
+  }
+  
+  .hero-subtitle {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+  }
+  
+  .hero-title {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+  }
+  
+  .hero-desc {
+    font-size: 1rem;
+    margin-bottom: 25px;
+  }
+  
+  .hero-btns {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+  
+  .hero-btns .btn {
+    width: 100%;
+    max-width: 280px;
   }
   
   .about-grid,
@@ -2029,6 +2089,11 @@ footer {
   
   .inquiry-form {
     order: -1;
+    padding: 25px;
+  }
+  
+  .contact-card {
+    padding: 25px;
   }
   
   .menu-drawer,
@@ -2041,6 +2106,11 @@ footer {
     height: 100vh;
     max-height: 100vh;
     border-radius: 0;
+  }
+  
+  .booking-modal-header,
+  .booking-modal-footer {
+    padding: 15px 20px;
   }
   
   .booking-modal-body {
@@ -2073,6 +2143,18 @@ footer {
     height: 150px;
   }
   
+  .success-ticket-receipt {
+    padding: 20px;
+  }
+  
+  .success-ticket-receipt::before {
+    left: -10px;
+  }
+  
+  .success-ticket-receipt::after {
+    right: -10px;
+  }
+  
   .footer-grid {
     grid-template-columns: 1fr;
   }
@@ -2081,5 +2163,34 @@ footer {
     flex-direction: column;
     gap: 15px;
     text-align: center;
+  }
+}
+
+/* Stacking Form Fields on Small Screens */
+@media (max-width: 580px) {
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}
+
+/* Extra Small Phones Layouts */
+@media (max-width: 480px) {
+  .booking-widget-wrap {
+    padding: 20px 15px;
+  }
+  
+  .booking-widget-form {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  
+  .booking-widget-form .btn-search {
+    grid-column: span 1;
+  }
+  
+  .banquet-stats {
+    grid-template-columns: 1fr;
+    gap: 15px;
   }
 }

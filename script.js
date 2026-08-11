@@ -224,6 +224,15 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   myBookingsBtn.addEventListener('click', openBookingsDrawer);
+  const mobileMyBookingsBtn = document.getElementById('mobile-my-bookings-btn');
+  if (mobileMyBookingsBtn) {
+    mobileMyBookingsBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      navLinks.classList.remove('mobile-open');
+      menuBtn.classList.remove('active');
+      openBookingsDrawer();
+    });
+  }
   if (footerMyBookings) footerMyBookings.addEventListener('click', (e) => {
     e.preventDefault();
     openBookingsDrawer();
@@ -368,6 +377,16 @@ document.addEventListener('DOMContentLoaded', () => {
   // Bind booking opening buttons
   document.getElementById('header-book-btn').addEventListener('click', () => openBookingFlow());
   document.getElementById('hero-book-btn').addEventListener('click', () => openBookingFlow());
+  
+  const mobileBookBtn = document.getElementById('mobile-book-btn');
+  if (mobileBookBtn) {
+    mobileBookBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      navLinks.classList.remove('mobile-open');
+      menuBtn.classList.remove('active');
+      openBookingFlow();
+    });
+  }
   
   document.querySelectorAll('.btn-book-room').forEach(btn => {
     btn.addEventListener('click', (e) => {
