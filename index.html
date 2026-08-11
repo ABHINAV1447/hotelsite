@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Hotel Highway Prince | Premium Luxury Hotel & Restaurant on Delhi-Jaipur Highway</title>
+  <meta name="description" content="Experience premium hospitality at Hotel Highway Prince on NH-48 Delhi-Jaipur Expressway near Behror & Kotputli. Luxury rooms, banquet halls, multi-cuisine restaurant, and online room booking.">
+  <meta name="keywords" content="Hotel Highway Prince, Delhi-Jaipur highway hotels, luxury rooms Behror, banquet hall Kotputli, highway restaurant, book rooms online">
+  <meta name="author" content="Hotel Highway Prince">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Hotel Highway Prince | Official Website">
+  <meta property="og:description" content="Premium rooms, elegant banquets, and dining on the Delhi-Jaipur Expressway. Direct booking available.">
+  <meta property="og:image" content="images/hero.jpg">
+  
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="images/hero.jpg" type="image/x-icon">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       HEADER & NAVIGATION
+       ========================================================================== -->
+  <header id="header">
+    <div class="container nav-container">
+      <a href="#" class="logo">
+        <div class="logo-crest">HP</div>
+        <div class="logo-text">
+          <span class="logo-main">HIGHWAY PRINCE</span>
+          <span class="logo-sub">DELHI-JAIPUR HIGHWAY</span>
+        </div>
+      </a>
+      
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#rooms">Rooms</a></li>
+        <li><a href="#banquet">Banquets</a></li>
+        <li><a href="#dining">Dining</a></li>
+        <li><a href="#amenities">Amenities</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle" title="Toggle Theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="btn btn-accent" id="my-bookings-btn">
+          <i class="fa-solid fa-calendar-check" style="margin-right: 8px;"></i>My Bookings
+        </button>
+        <button class="btn btn-primary" id="header-book-btn">Book Stay</button>
+        <button class="menu-btn" id="menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       HERO & QUICK BOOK WIDGET
+       ========================================================================== -->
+  <section class="hero">
+    <div class="hero-slider" id="hero-slider">
+      <div class="hero-slide active" style="background-image: url('images/hero.jpg');"></div>
+      <div class="hero-slide" style="background-image: url('images/banquet.jpg');"></div>
+      <div class="hero-slide" style="background-image: url('images/restaurant.jpg');"></div>
+    </div>
+    
+    <div class="hero-content">
+      <span class="hero-subtitle">Welcome to Royal Comfort</span>
+      <h1 class="hero-title">Your Luxurious Highway Oasis</h1>
+      <p class="hero-desc">Nestled on the Delhi-Jaipur Expressway (NH-48), we provide traveler sanctuary, premium accommodations, grand banquet halls, and mouthwatering multi-cuisine dining.</p>
+      <div class="hero-btns">
+        <button class="btn btn-primary" id="hero-book-btn">Book A Room Now</button>
+        <a href="#rooms" class="btn btn-accent">Explore Rooms</a>
+      </div>
+    </div>
+
+    <!-- Quick Search Widget -->
+    <div class="booking-widget-wrap">
+      <form class="booking-widget-form" id="quick-booking-form">
+        <div class="form-group-widget">
+          <label for="check-in">Check-In</label>
+          <input type="date" id="widget-checkin" required>
+        </div>
+        <div class="form-group-widget">
+          <label for="check-out">Check-Out</label>
+          <input type="date" id="widget-checkout" required>
+        </div>
+        <div class="form-group-widget">
+          <label for="guests">Guests</label>
+          <select id="widget-guests">
+            <option value="1">1 Adult</option>
+            <option value="2" selected>2 Adults</option>
+            <option value="3">3 Adults</option>
+            <option value="4">4 Adults</option>
+            <option value="5">Family Group</option>
+          </select>
+        </div>
+        <div class="form-group-widget">
+          <label for="room-type">Room Type</label>
+          <select id="widget-room-type">
+            <option value="all">Any Available</option>
+            <option value="deluxe">Deluxe Room</option>
+            <option value="executive">Executive Suite</option>
+            <option value="family">Family Suite</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary btn-search">
+          <i class="fa-solid fa-magnifying-glass"></i> Check
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       ABOUT SECTION
+       ========================================================================== -->
+  <section class="section container" id="about" style="margin-top: 80px;">
+    <div class="about-grid">
+      <div class="about-content">
+        <span class="section-subtitle">Since 2011</span>
+        <h3 class="section-title">Royal Rajasthan Hospitality</h3>
+        <p class="about-text">Located along the Delhi-Jaipur Highway, Hotel Highway Prince has served as the premier choice of comfort, class, and convenience for millions of highway commuters and global travelers. We pair modern amenities with deep traditional hospitality.</p>
+        <p class="about-text">Whether you're breaking a long drive, hosting a majestic family wedding, or enjoying a premium gourmet lunch with friends, our dedicated staff guarantees a five-star experience.</p>
+        <div class="about-features">
+          <div class="about-feature-item">
+            <i class="fa-solid fa-circle-check"></i> 24/7 Premium Room Service
+          </div>
+          <div class="about-feature-item">
+            <i class="fa-solid fa-circle-check"></i> High-Speed EV Charger
+          </div>
+          <div class="about-feature-item">
+            <i class="fa-solid fa-circle-check"></i> Multi-Cuisine Food Court
+          </div>
+          <div class="about-feature-item">
+            <i class="fa-solid fa-circle-check"></i> Grand Banquet & Lawns
+          </div>
+        </div>
+        <a href="#contact" class="btn btn-outline">Plan Your Stop</a>
+      </div>
+      
+      <div class="about-image">
+        <img src="images/hero.jpg" alt="Hotel Facade">
+        <div class="about-badge">
+          <div class="years">15+</div>
+          <div class="label">Years of<br>Excellence</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       ROOMS SECTION
+       ========================================================================== */ -->
+  <section class="section" id="rooms">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Premium Comfort</span>
+        <h2 class="section-title">Rooms & Suites</h2>
+      </div>
+      
+      <div class="rooms-filter">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="deluxe">Deluxe Rooms</button>
+        <button class="filter-btn" data-filter="executive">Executive Suites</button>
+        <button class="filter-btn" data-filter="family">Family Suites</button>
+      </div>
+      
+      <div class="rooms-grid">
+        <!-- Room 1: Deluxe Room -->
+        <div class="room-card" data-category="deluxe">
+          <div class="room-img-container">
+            <img src="images/deluxe_room.jpg" alt="Deluxe Room">
+            <div class="room-price-tag">₹3,500 <span style="font-size: 0.8rem; font-weight: normal;">/ Night</span></div>
+          </div>
+          <div class="room-details">
+            <h3>Deluxe Room</h3>
+            <div class="room-amenities-icons">
+              <span><i class="fa-solid fa-wind"></i> AC</span>
+              <span><i class="fa-solid fa-wifi"></i> Free Wi-Fi</span>
+              <span><i class="fa-solid fa-tv"></i> LED TV</span>
+            </div>
+            <p class="room-desc">Cozy rooms designed for highway travelers seeking high-class comfort and deep rest. Offers premium mattresses and modern walk-in showers.</p>
+            <div class="room-footer">
+              <span class="room-capacity"><i class="fa-solid fa-user-group"></i> Max: 2 Adults</span>
+              <button class="btn btn-primary btn-book-room" data-room-id="deluxe">Book Now</button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Room 2: Executive Suite -->
+        <div class="room-card" data-category="executive">
+          <div class="room-img-container">
+            <img src="images/hero.jpg" alt="Executive Suite" style="filter: brightness(0.9);">
+            <div class="room-price-tag">₹5,500 <span style="font-size: 0.8rem; font-weight: normal;">/ Night</span></div>
+          </div>
+          <div class="room-details">
+            <h3>Executive Suite</h3>
+            <div class="room-amenities-icons">
+              <span><i class="fa-solid fa-sink"></i> Bathtub</span>
+              <span><i class="fa-solid fa-couch"></i> Lounge</span>
+              <span><i class="fa-solid fa-mug-hot"></i> Coffee</span>
+            </div>
+            <p class="room-desc">Experience ultimate luxury. Executive suites feature spacious seating rooms, workspace desks, luxurious bathtubs, and garden view windows.</p>
+            <div class="room-footer">
+              <span class="room-capacity"><i class="fa-solid fa-user-group"></i> Max: 3 Adults</span>
+              <button class="btn btn-primary btn-book-room" data-room-id="executive">Book Now</button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Room 3: Family Suite -->
+        <div class="room-card" data-category="family">
+          <div class="room-img-container">
+            <img src="images/restaurant.jpg" alt="Family Suite" style="filter: brightness(0.75);">
+            <div class="room-price-tag">₹7,500 <span style="font-size: 0.8rem; font-weight: normal;">/ Night</span></div>
+          </div>
+          <div class="room-details">
+            <h3>Family Suite</h3>
+            <div class="room-amenities-icons">
+              <span><i class="fa-solid fa-bed"></i> 2 Queen Beds</span>
+              <span><i class="fa-solid fa-box"></i> Safe</span>
+              <span><i class="fa-solid fa-expand"></i> Large Area</span>
+            </div>
+            <p class="room-desc">Ideal for families. Includes two connected double beds, a grand lounge area, separate dress-up wardrobes, and special family dining setups.</p>
+            <div class="room-footer">
+              <span class="room-capacity"><i class="fa-solid fa-user-group"></i> Max: 4 Adults</span>
+              <button class="btn btn-primary btn-book-room" data-room-id="family">Book Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       BANQUETS & EVENTS
+       ========================================================================== -->
+  <section class="section banquet-section" id="banquet">
+    <div class="container">
+      <div class="banquet-grid">
+        <div class="banquet-image">
+          <img src="images/banquet.jpg" alt="Grand Banquet Hall">
+        </div>
+        
+        <div class="banquet-content">
+          <span class="section-subtitle">Majestic Events</span>
+          <h3 class="section-title">Royal Banquet & Wedding Lawns</h3>
+          <p class="banquet-text">Bring your grand dream wedding or business event to life. Our royal banquet hall is fitted with gorgeous chandeliers, state-of-the-art acoustics, and central climate control. For open-air events, our massive manicured wedding lawns offer spaces for majestic gatherings.</p>
+          <p class="banquet-text">Our event hospitality features professional decorators, custom sound setups, valet parking services, and custom-catered Indian & Continental buffet setups.</p>
+          
+          <div class="banquet-stats">
+            <div class="banquet-stat-card">
+              <i class="fa-solid fa-building-user"></i>
+              <div class="banquet-stat-num">500+</div>
+              <div class="banquet-stat-label">Hall Capacity</div>
+            </div>
+            <div class="banquet-stat-card">
+              <i class="fa-solid fa-tree"></i>
+              <div class="banquet-stat-num">1000+</div>
+              <div class="banquet-stat-label">Lawn Capacity</div>
+            </div>
+            <div class="banquet-stat-card">
+              <i class="fa-solid fa-award"></i>
+              <div class="banquet-stat-num">100%</div>
+              <div class="banquet-stat-label">Dedicated Service</div>
+            </div>
+          </div>
+          
+          <a href="#contact" class="btn btn-primary">Book Event Venue</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       RESTAURANT & DINING
+       ========================================================================== -->
+  <section class="section" id="dining">
+    <div class="container">
+      <div class="dining-grid">
+        <div class="dining-content">
+          <span class="section-subtitle">Culinary Delights</span>
+          <h3 class="section-title">The Highway Royal Restaurant</h3>
+          <p class="dining-text">Renowned all across the Delhi-Jaipur expressway, our restaurant provides a pure culinary haven. Indulge in authentic tandoori preparations, spicy North Indian curries, fresh South Indian staples, and Chinese delicacies cooked by master chefs.</p>
+          
+          <ul class="dining-highlights">
+            <li>
+              <i class="fa-solid fa-truck-fast"></i>
+              <div>
+                <h4>Express Service for Travelers</h4>
+                <p>Enjoy hot, freshly prepared meals served fast so you can resume your highway journey without delay.</p>
+              </div>
+            </li>
+            <li>
+              <i class="fa-solid fa-seedling"></i>
+              <div>
+                <h4>Farm Fresh Ingredients</h4>
+                <p>All items are prepared using local farm-fresh spices, premium ghee, and vegetables.</p>
+              </div>
+            </li>
+            <li>
+              <i class="fa-solid fa-door-open"></i>
+              <div>
+                <h4>Spacious Dining Hall</h4>
+                <p>Features family-friendly booths, clean facilities, and a dedicated traveler lounge area.</p>
+              </div>
+            </li>
+          </ul>
+          
+          <button class="btn btn-primary" id="open-menu-btn">Explore Menu Card</button>
+        </div>
+        
+        <div class="dining-image">
+          <img src="images/restaurant.jpg" alt="Luxury Dining Hall">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Side Menu Card Drawer -->
+  <div class="drawer-overlay" id="drawer-overlay"></div>
+  <div class="menu-drawer" id="menu-drawer">
+    <div class="menu-drawer-header">
+      <h3>Gourmet Menu Card</h3>
+      <button class="close-drawer" id="close-drawer-btn"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="menu-drawer-body">
+      <!-- Category 1 -->
+      <div class="menu-category">
+        <h4>North Indian Curries</h4>
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <div class="menu-item-name">Royal Paneer Butter Masala</div>
+            <div class="menu-item-desc">Paneer cubes tossed in rich creamy sweet tomato gravy.</div>
+          </div>
+          <div class="menu-item-price">₹360</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <div class="menu-item-name">Heritage Dal Makhani</div>
+            <div class="menu-item-desc">Slow cooked black lentils with double butter and cream.</div>
+          </div>
+          <div class="menu-item-price">₹320</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <div class="menu-item-name">Tandoori Chicken Tikka</div>
+            <div class="menu-item-desc">Clay oven roasted chicken chunks marinated in yogurt spices.</div>
+          </div>
+          <div class="menu-item-price">₹420</div>
+        </div>
+      </div>
+      
+      <!-- Category 2 -->
+      <div class="menu-category">
+        <h4>Indian Breads</h4>
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <div class="menu-item-name">Butter Naan</div>
+            <div class="menu-item-desc">Soft leavened tandoor flatbread layered with premium butter.</div>
+          </div>
+          <div class="menu-item-price">₹65</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <div class="menu-item-name">Lachha Paratha</div>
+            <div class="menu-item-desc">Flaky, layered crispy wheat bread cooked in tandoor.</div>
+          </div>
+          <div class="menu-item-price">₹75</div>
+        </div>
+      </div>
+
+      <!-- Category 3 -->
+      <div class="menu-category">
+        <h4>South Indian & Fast Food</h4>
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <div class="menu-item-name">Masala Dosa</div>
+            <div class="menu-item-desc">Crisp thin rice crepe filled with spiced potato mash.</div>
+          </div>
+          <div class="menu-item-price">₹190</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <div class="menu-item-name">Veg Hakka Noodles</div>
+            <div class="menu-item-desc">Stir fried noodles with crunchy garlic vegetables.</div>
+          </div>
+          <div class="menu-item-price">₹220</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       AMENITIES SECTION
+       ========================================================================== -->
+  <section class="section amenities-section" id="amenities">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">World Class Care</span>
+        <h2 class="section-title">Resort Amenities</h2>
+      </div>
+      
+      <div class="amenities-grid">
+        <!-- Amenity 1 -->
+        <div class="amenity-card">
+          <div class="amenity-icon"><i class="fa-solid fa-clock"></i></div>
+          <h4>24/7 Room Service</h4>
+          <p>Fresh delicious meals, laundry, and housekeeping delivered to your door at any hour.</p>
+        </div>
+        <!-- Amenity 2 -->
+        <div class="amenity-card">
+          <div class="amenity-icon"><i class="fa-solid fa-bolt"></i></div>
+          <h4>Fast EV Charging</h4>
+          <p>Equipped with DC high-speed chargers to keep electric vehicles ready for the road.</p>
+        </div>
+        <!-- Amenity 3 -->
+        <div class="amenity-card">
+          <div class="amenity-icon"><i class="fa-solid fa-wifi"></i></div>
+          <h4>High-Speed Wi-Fi</h4>
+          <p>Unlimited high-speed internet covers every room and community event lounge.</p>
+        </div>
+        <!-- Amenity 4 -->
+        <div class="amenity-card">
+          <div class="amenity-icon"><i class="fa-solid fa-square-parking"></i></div>
+          <h4>Secure Parking</h4>
+          <p>Massive secure parking lot suited for private cars, group tour buses, and VIP transport.</p>
+        </div>
+        <!-- Amenity 5 -->
+        <div class="amenity-card">
+          <div class="amenity-icon"><i class="fa-solid fa-snowflake"></i></div>
+          <h4>Air Conditioned</h4>
+          <p>Every single room, dining hall, and lobby space is fully climate controlled.</p>
+        </div>
+        <!-- Amenity 6 -->
+        <div class="amenity-card">
+          <div class="amenity-icon"><i class="fa-solid fa-plug"></i></div>
+          <h4>100% Power Backup</h4>
+          <p>Heavy duty double power generators assure your comfort is never interrupted.</p>
+        </div>
+        <!-- Amenity 7 -->
+        <div class="amenity-card">
+          <div class="amenity-icon"><i class="fa-solid fa-child"></i></div>
+          <h4>Kids Play Area</h4>
+          <p>Dedicated garden playing zone for children to stretch and play during road trips.</p>
+        </div>
+        <!-- Amenity 8 -->
+        <div class="amenity-card">
+          <div class="amenity-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <h4>24/7 Security</h4>
+          <p>Guarded entries, CCTV monitoring systems, and local security officers on duty.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       REVIEWS / TESTIMONIALS
+       ========================================================================== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Guest Feedbacks</span>
+        <h2 class="section-title">What Travelers Say</h2>
+      </div>
+      
+      <div class="reviews-container">
+        <!-- Review 1 -->
+        <div class="review-slide active">
+          <div class="review-stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-quote">"The perfect highway stopover! Clean rooms, delicious butter chicken, and very fast service. Strongly recommend to anyone traveling from Delhi to Jaipur. The EV charging yard is a massive plus!"</p>
+          <h4 class="review-author">Amit Sharma</h4>
+          <span class="review-meta">Traveler, Gurgaon</span>
+        </div>
+        
+        <!-- Review 2 -->
+        <div class="review-slide">
+          <div class="review-stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-quote">"We organized our wedding function in the main Banquet hall. The lighting, decoration, and buffet setups were absolutely beautiful. The guests loved the spacious layouts!"</p>
+          <h4 class="review-author">Rajeev Verma</h4>
+          <span class="review-meta">Local Host, Jaipur</span>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="review-slide">
+          <div class="review-stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <p class="review-quote">"Very polite and helpful service desk. The room was extremely clean and spacious. Excellent location right on the expressway, saving you the stress of finding city parking."</p>
+          <h4 class="review-author">Sneha Patel</h4>
+          <span class="review-meta">Tourist, New Delhi</span>
+        </div>
+      </div>
+      
+      <div class="reviews-nav">
+        <button class="review-nav-btn" id="review-prev"><i class="fa-solid fa-arrow-left"></i></button>
+        <button class="review-nav-btn" id="review-next"><i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       CONTACT, MAP, & INQUIRY FORM
+       ========================================================================== -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Reach Out</span>
+        <h2 class="section-title">Contact Us</h2>
+      </div>
+      
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>Location Details</h3>
+          <ul class="contact-info-list">
+            <li class="contact-info-item">
+              <i class="fa-solid fa-map-location-dot"></i>
+              <div>
+                <h4>Address</h4>
+                <p>National Highway 48, Delhi-Jaipur Expressway, Near Paota, Kotputli, Rajasthan - 303108</p>
+              </div>
+            </li>
+            <li class="contact-info-item">
+              <i class="fa-solid fa-phone"></i>
+              <div>
+                <h4>Phone / Mobile</h4>
+                <p>+91 85 0480 0777, +91 94 1406 2777</p>
+              </div>
+            </li>
+            <li class="contact-info-item">
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <h4>Email Address</h4>
+                <p>info@hotelhighwayprince.com</p>
+              </div>
+            </li>
+          </ul>
+          
+          <!-- Google Maps Embed -->
+          <div class="map-wrapper">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14144.38575003666!2d76.1952877!3d27.6678229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3973273e8787f0b9%3A0xe6bf446ee2366835!2sHotel%20Highway%20Prince%20Behror!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+        
+        <!-- Contact/Inquiry Form -->
+        <form class="inquiry-form" id="contact-form">
+          <div>
+            <h3>Send an Inquiry</h3>
+            <p class="inquiry-desc">Have questions about rooms, event bookings, or catering? Send us a message and our team will reply shortly.</p>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contact-name">Full Name</label>
+              <input type="text" id="contact-name" placeholder="John Doe" required>
+            </div>
+            <div class="form-group">
+              <label for="contact-email">Email Address</label>
+              <input type="email" id="contact-email" placeholder="john@example.com" required>
+            </div>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contact-phone">Phone Number</label>
+              <input type="tel" id="contact-phone" placeholder="+91 9999999999" required>
+            </div>
+            <div class="form-group">
+              <label for="contact-purpose">Inquiry Purpose</label>
+              <select id="contact-purpose">
+                <option value="room">Room Reservation</option>
+                <option value="wedding">Wedding / Banquet Event</option>
+                <option value="catering">Restaurant / Catering</option>
+                <option value="general">General Question</option>
+              </select>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="contact-msg">Your Message</label>
+            <textarea id="contact-msg" rows="5" placeholder="Tell us how we can help you..." required></textarea>
+          </div>
+          
+          <button type="submit" class="btn btn-primary">Submit Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-col footer-about">
+        <a href="#" class="logo">
+          <div class="logo-crest">HP</div>
+          <div class="logo-text">
+            <span class="logo-main">HIGHWAY PRINCE</span>
+          </div>
+        </a>
+        <p>Providing the perfect premium sanctuary along the Delhi-Jaipur highway since 2011. Your safety, comfort, and gourmet cravings are our highest duties.</p>
+        <div class="social-links">
+          <a href="https://www.facebook.com/hotelhighwayprince.official" target="_blank" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/hotelhighwayprince.official/" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/company/hotel-highway-prince/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://youtube.com/@hotelhighwayprince.official" target="_blank" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#rooms">Rooms & Suites</a></li>
+          <li><a href="#banquet">Banquets & Lawns</a></li>
+          <li><a href="#dining">Restaurant</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-col">
+        <h4>Room Stays</h4>
+        <ul class="footer-links">
+          <li><a href="#rooms">Deluxe Rooms</a></li>
+          <li><a href="#rooms">Executive Suites</a></li>
+          <li><a href="#rooms">Family Suites</a></li>
+          <li><a href="#" id="footer-my-bookings">My Reservations</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-col footer-newsletter">
+        <h4>Newsletter</h4>
+        <p>Subscribe to receive news, seasonal highway offers, and special food coupons.</p>
+        <form class="newsletter-form" id="newsletter-form">
+          <input type="email" placeholder="Your Email" required>
+          <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
+    
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Hotel Highway Prince. All Rights Reserved.</p>
+      <p>Developed with <i class="fa-solid fa-heart" style="color: var(--primary);"></i> by Antigravity</p>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       DYNAMIC BOOKING MODAL
+       ========================================================================== -->
+  <div class="booking-modal" id="booking-modal">
+    <div class="modal-backdrop-blur" id="modal-backdrop"></div>
+    <div class="booking-modal-content">
+      
+      <div class="booking-modal-header">
+        <h3><i class="fa-solid fa-hotel"></i> Book Your Stay</h3>
+        <button class="close-modal" id="close-modal-btn"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      
+      <!-- Steps Indicator -->
+      <div class="booking-steps-tracker">
+        <div class="booking-step-indicator active" id="step-indicator-1">
+          <div class="step-num">1</div>
+          <span class="step-label">Select Room</span>
+        </div>
+        <div class="booking-step-indicator" id="step-indicator-2">
+          <div class="step-num">2</div>
+          <span class="step-label">Your Info</span>
+        </div>
+        <div class="booking-step-indicator" id="step-indicator-3">
+          <div class="step-num">3</div>
+          <span class="step-label">Confirmation</span>
+        </div>
+      </div>
+      
+      <div class="booking-modal-body">
+        
+        <!-- STEP 1: SELECT ROOM TYPE -->
+        <div class="booking-step-content active" id="step-content-1">
+          <h4 style="margin-bottom: 20px;">Choose Room Category</h4>
+          <div class="room-selection-container">
+            <!-- Room Option 1 -->
+            <div class="booking-room-option selected" data-room-type="deluxe" data-price="3500">
+              <img src="images/deluxe_room.jpg" alt="Deluxe Room">
+              <div class="booking-room-option-details">
+                <div class="room-option-header">
+                  <h4>Deluxe Room</h4>
+                  <div class="room-option-price">₹3,500<span style="font-size: 0.75rem; font-weight: normal; color: var(--text-muted);">/night</span></div>
+                </div>
+                <p class="room-option-desc">Luxury comfort at economy rates. Perfect stopover rest.</p>
+                <div class="room-option-meta">
+                  <span><i class="fa-solid fa-user-group"></i> Max 2 Guests</span>
+                  <span class="room-option-select-state"><i class="fa-solid fa-circle-check"></i> Selected</span>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Room Option 2 -->
+            <div class="booking-room-option" data-room-type="executive" data-price="5500">
+              <img src="images/hero.jpg" alt="Executive Suite" style="filter: brightness(0.95);">
+              <div class="booking-room-option-details">
+                <div class="room-option-header">
+                  <h4>Executive Suite</h4>
+                  <div class="room-option-price">₹5,500<span style="font-size: 0.75rem; font-weight: normal; color: var(--text-muted);">/night</span></div>
+                </div>
+                <p class="room-option-desc">Spacious royal luxury, cozy seating lounge, garden views.</p>
+                <div class="room-option-meta">
+                  <span><i class="fa-solid fa-user-group"></i> Max 3 Guests</span>
+                  <span class="room-option-select-state">Click to Select</span>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Room Option 3 -->
+            <div class="booking-room-option" data-room-type="family" data-price="7500">
+              <img src="images/restaurant.jpg" alt="Family Suite" style="filter: brightness(0.8);">
+              <div class="booking-room-option-details">
+                <div class="room-option-header">
+                  <h4>Family Suite</h4>
+                  <div class="room-option-price">₹7,500<span style="font-size: 0.75rem; font-weight: normal; color: var(--text-muted);">/night</span></div>
+                </div>
+                <p class="room-option-desc">Connected spacious double beds, large family relaxation zone.</p>
+                <div class="room-option-meta">
+                  <span><i class="fa-solid fa-user-group"></i> Max 4 Guests</span>
+                  <span class="room-option-select-state">Click to Select</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- STEP 2: GUEST DETAILS & CALCULATION -->
+        <div class="booking-step-content" id="step-content-2">
+          <div class="booking-details-grid">
+            <div class="booking-details-form">
+              <h4 style="border-bottom: 1px solid var(--border-color); padding-bottom: 8px;">Enter Details</h4>
+              <div class="form-group">
+                <label for="book-name">Guest Full Name</label>
+                <input type="text" id="book-name" placeholder="John Doe" required>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="book-email">Email Address</label>
+                  <input type="email" id="book-email" placeholder="john@example.com" required>
+                </div>
+                <div class="form-group">
+                  <label for="book-phone">Phone Number</label>
+                  <input type="tel" id="book-phone" placeholder="+91 9999999999" required>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="book-checkin">Check-in Date</label>
+                  <input type="date" id="book-checkin" required>
+                </div>
+                <div class="form-group">
+                  <label for="book-checkout">Check-out Date</label>
+                  <input type="date" id="book-checkout" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="book-requests">Special Requests (Optional)</label>
+                <textarea id="book-requests" rows="3" placeholder="Need airport transfer, extra pillows, early check-in, etc."></textarea>
+              </div>
+            </div>
+            
+            <div class="booking-summary-panel">
+              <h4>Fare Summary</h4>
+              <div class="booking-summary-row">
+                <span>Room Selected</span>
+                <span id="summary-room-name">Deluxe Room</span>
+              </div>
+              <div class="booking-summary-row">
+                <span>Rate per Night</span>
+                <span id="summary-room-rate">₹3,500</span>
+              </div>
+              <div class="booking-summary-row">
+                <span>Total Nights</span>
+                <span id="summary-nights">1 Night</span>
+              </div>
+              <div class="booking-summary-row">
+                <span>Base Price</span>
+                <span id="summary-base-price">₹3,500</span>
+              </div>
+              <div class="booking-summary-row">
+                <span>GST Tax (12%)</span>
+                <span id="summary-tax">₹420</span>
+              </div>
+              <div class="booking-summary-row total">
+                <span>Total Cost</span>
+                <span id="summary-total">₹3,920</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- STEP 3: CONFIRMATION RECEIPT -->
+        <div class="booking-step-content" id="step-content-3">
+          <div class="booking-success-wrapper">
+            <div class="success-icon-badge"><i class="fa-solid fa-circle-check"></i></div>
+            <h4>Booking Confirmed!</h4>
+            <p style="color: var(--text-muted);">Thank you for booking directly. Your reservation is active and saved.</p>
+            
+            <!-- Ticket -->
+            <div class="success-ticket-receipt" id="success-ticket">
+              <div class="ticket-header">
+                <span class="ticket-title">HOTEL HIGHWAY PRINCE</span>
+                <span class="ticket-id" id="ticket-booking-id">HHP-928172</span>
+              </div>
+              <div class="ticket-row">
+                <span>Guest Name</span>
+                <span id="ticket-guest-name">John Doe</span>
+              </div>
+              <div class="ticket-row">
+                <span>Room Type</span>
+                <span id="ticket-room-type">Deluxe Room</span>
+              </div>
+              <div class="ticket-row">
+                <span>Stay Dates</span>
+                <span id="ticket-dates">Aug 12 - Aug 13, 2026</span>
+              </div>
+              <div class="ticket-row">
+                <span>Duration</span>
+                <span id="ticket-duration">1 Night</span>
+              </div>
+              <div class="ticket-row" style="border-top: 1px dashed var(--border-color); padding-top: 12px; margin-top: 12px;">
+                <span style="font-weight: 700; color: var(--text-main);">Amount Paid</span>
+                <span style="font-weight: 700; color: var(--primary);" id="ticket-total">₹3,920</span>
+              </div>
+              <div class="ticket-footer">
+                <p>Present this ticket at the reception desk during check-in.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      
+      <div class="booking-modal-footer">
+        <button class="btn btn-outline" id="modal-prev-btn" style="visibility: hidden;">Back</button>
+        <button class="btn btn-primary" id="modal-next-btn">Continue</button>
+      </div>
+      
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MY BOOKINGS DRAWER
+       ========================================================================== -->
+  <div class="bookings-drawer" id="bookings-drawer">
+    <div class="bookings-drawer-header">
+      <h3><i class="fa-solid fa-calendar-days"></i> Your Reservations</h3>
+      <button class="close-bookings-drawer" id="close-bookings-btn"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="bookings-drawer-body" id="bookings-drawer-body">
+      <!-- Bookings list will be dynamically rendered here -->
+      <div class="bookings-empty-state" id="bookings-empty-state">
+        <i class="fa-solid fa-hotel"></i>
+        <h4>No active bookings found</h4>
+        <p>Book a premium room using the "Book Stay" button above.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Javascript File -->
+  <script src="script.js"></script>
+</body>
+</html>
