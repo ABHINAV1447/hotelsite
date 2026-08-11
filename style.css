@@ -1927,6 +1927,20 @@ footer {
    MEDIA QUERIES (RESPONSIVENESS)
    ========================================================================== */
 @media (max-width: 1024px) {
+  .hero {
+    height: auto;
+    min-height: 100vh;
+    flex-direction: column;
+    padding-top: 140px;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+  }
+
+  .hero-content {
+    margin-top: 0;
+    margin-bottom: 45px;
+  }
+
   .hero-title {
     font-size: 3rem;
   }
@@ -1937,7 +1951,7 @@ footer {
     bottom: auto;
     left: auto;
     width: 100%;
-    margin-top: -60px;
+    margin-top: 0;
     margin-bottom: 40px;
     border-radius: 0;
     box-shadow: none;
