@@ -1,13 +1,13 @@
 /* ==========================================================================
-   HOTEL HIGHWAY PRINCE - INTERACTIVE SCRIPTS
+   HOTEL HIGHWAY CHOICE - INTERACTIVE SCRIPTS
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
 
   // State Management
   const state = {
-    bookings: JSON.parse(localStorage.getItem('hhp_bookings')) || [],
-    currentTheme: localStorage.getItem('hhp_theme') || 'light',
+    bookings: JSON.parse(localStorage.getItem('hhc_bookings')) || [],
+    currentTheme: localStorage.getItem('hhc_theme') || 'light',
     bookingForm: {
       roomType: 'deluxe',
       pricePerNight: 3500,
@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   themeToggle.addEventListener('click', () => {
     state.currentTheme = state.currentTheme === 'light' ? 'dark' : 'light';
-    localStorage.setItem('hhp_theme', state.currentTheme);
+    localStorage.setItem('hhc_theme', state.currentTheme);
     applyTheme(state.currentTheme);
   });
 
@@ -292,7 +292,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const cancelBooking = (id) => {
     if (confirm(`Are you sure you want to cancel booking ${id}? This action cannot be undone.`)) {
       state.bookings = state.bookings.filter(b => b.id !== id);
-      localStorage.setItem('hhp_bookings', JSON.stringify(state.bookings));
+      localStorage.setItem('hhc_bookings', JSON.stringify(state.bookings));
       renderBookings();
     }
   };
@@ -548,7 +548,7 @@ document.addEventListener('DOMContentLoaded', () => {
       calculateCosts();
 
       // Save reservation
-      const bookingId = 'HHP-' + Math.floor(100000 + Math.random() * 900000);
+      const bookingId = 'HHC-' + Math.floor(100000 + Math.random() * 900000);
       const newBooking = {
         id: bookingId,
         roomType: state.bookingForm.roomType,
@@ -562,7 +562,7 @@ document.addEventListener('DOMContentLoaded', () => {
       };
 
       state.bookings.push(newBooking);
-      localStorage.setItem('hhp_bookings', JSON.stringify(state.bookings));
+      localStorage.setItem('hhc_bookings', JSON.stringify(state.bookings));
 
       // Build confirmation ticket UI
       document.getElementById('ticket-booking-id').innerText = bookingId;
